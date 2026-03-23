@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#section-team {
+    background-image: url('../../public/images/background-dark.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/*#hero {
+    height: auto;
+    background-image: 
+    linear-gradient(
+      to right,
+      rgba(62, 21, 61, 0.7),   
+      rgba(255, 255, 255, 0.85), 
+       rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85), 
+      rgba(237, 203, 47, 0.6) 
+    ),
+    url('/public/images/hero-video.mp4');
+
+  background-size: cover;
+  background-position: center;
+}*/
