@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('propiedad_imagenes', function (Blueprint $table) {
             $table->id();
             $table->foreignId('propiedad_id')->constrained('propiedades');
+            $table->string('ruta');
             $table->timestamps();
         });
     }
