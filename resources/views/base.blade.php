@@ -31,8 +31,8 @@
             <img src="{{ asset('images/logo-nav.png') }}" class="h-12">
 
             <ul class="flex items-center gap-8 text-sm text-gray-700">
-                <li><a href="#" class="hover:text-[#3E153D] transition">Inicio</a></li>
-                <li><a href="#" class="hover:text-[#3E153D] transition">Propiedades</a></li>
+                <li><a href="/" class="hover:text-[#3E153D] transition">Inicio</a></li>
+                <li><a href="/propiedades" class="hover:text-[#3E153D] transition">Propiedades</a></li>
                 <li><a href="#" class="hover:text-[#3E153D] transition">Inversiones</a></li>
                 <li><a href="#" class="hover:text-[#3E153D] transition">Contacto</a></li>
             </ul>
@@ -44,11 +44,11 @@
 
             <div class="text-center mb-10">
                 <h3 class="text-[#CECECE] mb-4">
-                    Explorar todas las propiedades
+                    @yield('header_subtitle', 'Explorar todas las propiedades')
                 </h3>
 
                 <h1 class="text-[#EDCB2F] text-4xl font-bold">
-                    Encontrá la propiedad ideal para vos
+                    @yield('header_title', 'Encontrá tu próxima propiedad')
                 </h1>
             </div>
 

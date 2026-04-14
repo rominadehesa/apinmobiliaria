@@ -12,6 +12,8 @@ use App\Http\Controllers\PublicController;
 
 Route::get('/', [PublicController::class, 'index']);
 Route::get('/inicio', [PublicController::class, 'index'])->name('home');
+Route::get('/propiedades', [PublicController::class, 'allPropiedades'])->name('propiedades');
+Route::get('/propiedades/{id}', [PublicController::class, 'showPropiedad'])->name('propiedades.show');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 

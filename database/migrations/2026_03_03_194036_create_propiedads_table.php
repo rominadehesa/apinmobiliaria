@@ -17,11 +17,16 @@ return new class extends Migration
         // 🏷️ Básico
         $table->string('titulo');
         $table->text('descripcion')->nullable();
+        $table->text('descripcion_breve')->nullable();
         $table->decimal('precio', 12, 2)->nullable();
 
         // 📐 Características
         $table->integer('habitaciones')->nullable();
+        $table->integer('ambientes')->nullable();
         $table->integer('banios')->nullable();
+        $table->text('banios_extra')->nullable();
+
+
         $table->integer('superficie_total')->nullable();
         $table->integer('superficie_cubierta')->nullable();
 
@@ -35,7 +40,11 @@ return new class extends Migration
         $table->boolean('tiene_cochera')->default(false);
 
         // ⚡ Servicios (simple por ahora)
-        $table->text('servicios')->nullable();
+        $table->boolean('luz')->default(false);
+        $table->boolean('gas')->default(false);
+        $table->boolean('calefaccion')->default(false);
+        $table->string('calefaccion_extra')->default(false);
+        $table->integer('cant_plantas')->default(1);
 
         // 📝 Extra
         $table->text('observaciones')->nullable();

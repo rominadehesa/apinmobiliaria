@@ -3,8 +3,8 @@
 @section('title', 'Inicio')
 
 
-@section('header_title', 'Tu próximo paso inmobiliario')
-@section('header_subtitle', 'en manos de profesionales')
+@section('header_title', 'Explorar todas las propiedades')
+@section('header_subtitle', 'Encontrá tu próxima propiedad')
 
 
 @section('content')
